@@ -2,8 +2,18 @@
 header {
     display: block;
     color:f0f;
-    width: 80%
+    width: 80%;
     float: right;
+    max-width: 80vw;
+}
+
+span {
+    display: block;
+    text-align: right;
+}
+
+#secondSpan {
+    display: block;
 }
 
 img {
