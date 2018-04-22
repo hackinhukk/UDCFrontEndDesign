@@ -1,0 +1,18 @@
+
+header {
+    display: block;
+    color:f0f;
+    width: 80%
+    float: right;
+}
+
+img {
+    width:5%;
+    height: 5%;
+    display: block;
+    float: left;
+}
+
+h1 {
+    color: blue;
+}
