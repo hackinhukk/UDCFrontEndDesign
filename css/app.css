@@ -1,4 +1,4 @@
-
+/* Beginning of Header CSS */
 header {
     display: flex;
     height: 15vh;
@@ -24,11 +24,51 @@ header>img {
     height: 100%;
     display: flex;
 }
-.Zerg {
-    width: 5%;
-    height:20%;
+
+/* Ending of Header CSS */
+
+/* Beginning of Main CSS */
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-left-column {
+    display: flex;
+    max-width: 20%;
+    background-color: blue;
+    flex-direction: column;
+    order: 0;
+
+}
+
+.main-right-column {
+    display: flex;
+    /*margin-left: auto;*/
+    order: 1;
+    max-width: 80%;
+    background-color: red;
+    margin-left: auto;
+}
+/* this .Zerg CSS makes the image fit the container above */
+.main-right-column-image {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main>aside>figure {
-    margin-top: 2.5%;
+    min-height: 48px;
+    min-width: 48px;
+    background-color: green;
+}
+main>aside>figure:before{
+    content: "xd";
+}
+
+
+.third-box {
+    color: #FE0A0A;
 }
