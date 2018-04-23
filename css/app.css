@@ -37,7 +37,6 @@ main {
 .main-left-column {
     display: flex;
     max-width: 20%;
-    background-color: blue;
     flex-direction: column;
     order: 0;
 
@@ -48,7 +47,6 @@ main {
     /*margin-left: auto;*/
     order: 1;
     max-width: 80%;
-    background-color: red;
     margin-left: auto;
 }
 /* this .Zerg CSS makes the image fit the container above */
@@ -63,6 +61,5 @@ main>aside>figure {
     display: flex;
     min-height: 48px;
     min-width: 48px;
-    background-color: green;
     flex-direction: column;
 }
