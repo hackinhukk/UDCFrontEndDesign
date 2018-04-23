@@ -32,6 +32,8 @@ header>img {
 main {
     display: flex;
     flex-direction: row;
+    height: 50vh;
+    background-color: yellow;
 }
 
 .main-left-column {
@@ -48,6 +50,8 @@ main {
     order: 1;
     max-width: 80%;
     margin-left: auto;
+    margin-right: 10%;
+    background-color: red;
 }
 /* this .Zerg CSS makes the image fit the container above */
 .main-right-column-image {
@@ -66,3 +70,15 @@ main>aside>figure {
 /* Ending of Main CSS */
 
 /* Beginning of Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+footer>section {
+    display: flex;
+    margin-left: 10%;
+}
