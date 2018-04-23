@@ -58,17 +58,11 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* This Part Places the Images and their text in the right format */
 main>aside>figure {
+    display: flex;
     min-height: 48px;
     min-width: 48px;
     background-color: green;
-}
-main>aside>figure:before{
-    content: "xd";
-}
-
-
-.third-box {
-    color: #FE0A0A;
+    flex-direction: column;
 }
