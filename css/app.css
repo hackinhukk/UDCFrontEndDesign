@@ -5,16 +5,24 @@ header {
     max-height: 15vh;
     margin-left: 20%;
     margin-right: 10%;
+    border-bottom: 5%;
     border-bottom-style: solid;
     box-sizing: border-box;
 }
 
 .headerDiv {
+    display: flex;
+    flex-direction: column;
     margin-left: auto; /* to push header to the right */
+/*    min-width: auto;
+    min-height: auto; */
 }
 
 .header-div-h5 {
+    display: flex;
     text-align: right;
+    margin-left: auto;
+    align-items: center; /* this is the property needed to make the text rise above the bottom border */
 }
 
 header>img {
@@ -58,8 +66,8 @@ main {
     min-height: 100%;
     height: auto;
     width: auto;
-/*    margin-left: auto;
-    margin-right: auto;*/
+    margin-left: auto;
+    margin-right: auto;
 }
 /* This Part Places the Images and their text in the right format */
 main>aside>figure {
@@ -85,6 +93,7 @@ footer>section {
     margin-right: 40%;
 }
 footer>div>section>img{
+    display: flex;
     min-width: 48px;
     min-height: 48px;
     max-height: 48px;
