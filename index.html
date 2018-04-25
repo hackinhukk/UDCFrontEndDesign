@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Front End Design</title>
+    <title>Trevor Thomas Portfolio Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="css/app.css">
@@ -10,11 +10,13 @@
 <body>
     <!--  This is where the header HTML is located, Includes
           Udacity Logo, Name and Occupation -->
+    <!-- all the names in header are cleaned up, remove this comment before submitting -->
     <header>
-      <img src="imgs/udacity.svg" alt="">
-      <div class="headerDiv">
-      <h1>Trevor Thomas</h1>
-      <h5 class="header-div-h5">Front-End Hackzor</h5>
+      <img class="header-logo" src="imgs/udacity.svg" alt="">
+      <div class="header-text-container">
+      <h1 class="header-title">Trevor Thomas</h1>
+      <h5 class="header-sub-title">Front-End Ninja</h5>
+      <p class="placeholder"></p>
       </div>
 
     </header>
@@ -32,14 +34,34 @@
         </main>
     </div>
 
-    <footer>
-        <h1>Interests</h1>
-        <div class="Footer-box-container">
-        <section class="footer-first-box"><img src="imgs/Vector_zerg.svg"><p>Esports<br />www.sc2casts.com</p></section>
-        <section class="footer-second-box"><img src="imgs/Bitcoin.svg"><p>CryptoCurrency<br />www.coinbase.com</p></section>
-        <section class="footer-third-box"><img src="imgs/money.svg"><p>Business<br />www.cpa.com</p></section>
+    <nav class="featured-work">
+        <h1 class="featured-work-title">Featured Work:</h1>
+        <div class="footer-box-container">
+
+        <!-- UL li -> img, p, a replace section with li's, img and p and a as children of li's
+        </ul>'s -->
+        <ul class="featured-work-list">
+          <li class="featured-work-part">
+              <img class="featured-work-img" src="imgs/Vector_zerg.svg">
+              <p class="featured-work-text">
+                Esports
+              </p>
+              <a class="featured-work-url" href="www.placeholder1.com">Click here</a>
+            </li>
+          <li class="featured-work-part">
+              <img class="featured-work-img" src="imgs/Bitcoin.svg">
+                  <p class="featured-work-text">
+                    CryptoCurrency
+                  </p>
+                  <a class="featured-work-url" href="www.coinbase.com">Click here</a>
+          </li>
+          <li class="featured-work-part">
+              <img class="featured-work-img" src="imgs/money.svg">
+              <p class="featured-work-text">Business</p>
+              <a class="featured-work-url" href="www.cpa.com">Click here</a>
+          </li>
         </div>
-    </footer>
+    </nav>
     <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,34 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+
 /* Beginning of Header CSS */
 header {
     display: flex;
-    height: 15vh;
     max-height: 15vh;
+    margin-top: 4em;
     margin-left: 20%;
     margin-right: 10%;
-    border-bottom: 5%;
     border-bottom-style: solid;
-    box-sizing: border-box;
+    border-bottom-color: grey;
 }
 
-.headerDiv {
-    display: flex;
-    flex-direction: column;
+.header-text-container {
     margin-left: auto; /* to push header to the right */
-/*    min-width: auto;
-    min-height: auto; */
+  /*  align-items: center; */
 }
 
-.header-div-h5 {
-    display: flex;
+.header-title {
+  order: 0;
+  flex-basis: 10px
+}
+
+.header-sub-title {
     text-align: right;
-    margin-left: auto;
-    align-items: center; /* this is the property needed to make the text rise above the bottom border */
 }
 
-header>img {
-    width: 5%;
-    height: 100%;
-    display: flex;
+.header-logo {
+    width: 5vw;
+    height: 5vw;
 }
 
 /* Ending of Header CSS */
@@ -81,18 +94,18 @@ main>aside>figure {
 
 /* Beginning of Footer */
 
-footer {
+.Featured-Work {
     display: flex;
     flex-direction: column;
     max-width: 80%;
     margin-left: 20%;
     margin-right: 10%;
 }
-footer>section {
+nav>div>ul {
     display: flex;
-    margin-right: 40%;
+    flex-direction: column;
 }
-footer>div>section>img{
+nav>div>ul>img{
     display: flex;
     min-width: 48px;
     min-height: 48px;
