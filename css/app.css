@@ -57,7 +57,6 @@ main {
     display: flex;
     flex-direction: row;
     max-height: 50vh;
-    background-color: yellow;
     margin-right: 10%;
     margin-left: 5%;
     flex-wrap: nowrap;
@@ -82,20 +81,23 @@ main>aside>figure {
 }
 
 .main-right-column {
-  display: flex;
+  display: block;
   max-width: 100%;
-  background-color: red;
   min-width: 80%;
   margin-left: 0%;
   order: 1;
-  max-height: 50%;
+  max-height: 50vh;
+  min-height: 50vh;
+  /* BACKGROUND IMAGE HERE */
+  background-image: url('https://tctechcrunch2011.files.wordpress.com/2015/04/codecode.jpg?crop');
+  background-repeat: no-repeat;
+  /* this compromises aspect ratio, but makes it fill the div */
+  background-size: cover;
+  background-position: center center;
 }
 /* this CSS makes the image fit the container above */
 .main-right-column-image {
   min-width: 100%;
-  overflow: scroll;
-/* TODO make this take up entire container like images in list */
-
 }
 
 /* Ending of Main CSS */
@@ -108,7 +110,6 @@ main>aside>figure {
     max-width: 80%;
     margin-left: 20%;
     margin-right: 10%;
-    min-height: 20vh;
     overflow: auto;
     flex-wrap: nowrap;
 }
