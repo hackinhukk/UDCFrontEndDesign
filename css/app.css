@@ -4,9 +4,15 @@ body {
   min-width: 100vw;
   min-height: 100vh;
 }
-
+header, nav, footer, figure, div, aside {
+  box-sizing: border-box;
+}
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,11 +33,9 @@ header {
 
 .header-text-container {
     margin-left: auto; /* to push header to the right */
-  /*  align-items: center; */
 }
 
 .header-title {
-  order: 0;
   flex-basis: 10px
 }
 
@@ -51,36 +55,20 @@ header {
 main {
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    max-height: 50vh;
     background-color: yellow;
-    box-sizing: border-box;
-    width: 100vw;
+    margin-right: 10%;
+    margin-left: 5%;
+    flex-wrap: nowrap;
+    overflow: auto;
+    /* overflow makes content contained to a container */
 }
 
 .main-left-column {
-    display: flex;
+    min-width: 20%;
     max-width: 20%;
-    width:20%;
-    flex-direction: column;
-}
-
-.main-right-column {
-    display: flex;
-    max-width: 70%;
-    width: 70%;
-    min-width:70%;
-    margin-right: 10%;
-    background-color: red;
-}
-/* this CSS makes the image fit the container above */
-.main-right-column-image {
-    display: flex;
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    order: 0;
+    background-color: blue;
 }
 /* This Part Places the Images and their text in the right format */
 main>aside>figure {
@@ -90,6 +78,22 @@ main>aside>figure {
     flex-direction: column;
     text-align: center;
 }
+
+.main-right-column {
+  box-sizing: border-box;
+  max-width: 100%;
+  background-color: red;
+  min-width: 100%;
+  margin-right: 10%;
+  margin-left: 0%;
+  order: 1;
+  overflow: auto;
+}
+/* this CSS makes the image fit the container above */
+.main-right-column-image {
+  object-fit: fill;
+}
+
 /* Ending of Main CSS */
 
 /* Beginning of Footer */
