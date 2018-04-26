@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     display: flex;
     max-height: 15vh;
-    margin-top: 4em;
+    margin-top: 3em;
     margin-left: 20%;
     margin-right: 10%;
     border-bottom-style: solid;
@@ -36,11 +36,12 @@ header {
 }
 
 .header-title {
-  flex-basis: 10px
+  font-size: 3.2vw;
 }
 
 .header-sub-title {
     text-align: right;
+    font-size: 1.5vw;
 }
 
 .header-logo {
@@ -60,11 +61,12 @@ main {
     margin-right: 10%;
     margin-left: 5%;
     flex-wrap: nowrap;
-    overflow: auto;
     /* overflow makes content contained to a container */
 }
 
 .main-left-column {
+    display: flex;
+    flex-direction: column;
     min-width: 20%;
     max-width: 20%;
     order: 0;
@@ -80,44 +82,54 @@ main>aside>figure {
 }
 
 .main-right-column {
-  box-sizing: border-box;
+  display: flex;
   max-width: 100%;
   background-color: red;
-  min-width: 100%;
-  margin-right: 10%;
+  min-width: 80%;
   margin-left: 0%;
   order: 1;
-  overflow: auto;
+  max-height: 50%;
 }
 /* this CSS makes the image fit the container above */
 .main-right-column-image {
-  object-fit: fill;
+  min-width: 100%;
+  overflow: scroll;
+/* TODO make this take up entire container like images in list */
+
 }
 
 /* Ending of Main CSS */
 
 /* Beginning of Footer */
 
-.Featured-Work {
+.featured-work {
     display: flex;
     flex-direction: column;
     max-width: 80%;
     margin-left: 20%;
     margin-right: 10%;
 }
-nav>div>ul {
-    display: flex;
-    flex-direction: column;
-}
-nav>div>ul>img{
-    display: flex;
-    min-width: 48px;
-    min-height: 48px;
-    max-height: 48px;
-    max-width: 48px;
-}
 
-.Footer-box-container {
+.featured-work-title {
+  font-size: 2vw;
+  margin: 0;
+  margin-bottom: 1.5vh;
+}
+.featured-work-list {
     display: flex;
     flex-direction: row;
+    margin-top: 0;
+    padding: 0;
+    list-style-type: none; /* gets rid of dots */
+}
+
+.featured-work-part {
+  margin-right: 1.5vw;
+  width: calc((100% - 6vw)/3);
+  text-align: center;
+}
+
+.featured-work-img {
+  width: 100%;
+  height: auto;
 }
