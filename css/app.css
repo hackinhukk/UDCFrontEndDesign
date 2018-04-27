@@ -70,48 +70,43 @@ main {
     /* overflow makes content contained to a container */
 }
 
-.main-left-column {
-    display: flex;
-    flex-direction: column;
-    min-width: 18%;
-    max-width: 18%;
-    order: 0;
-    background-color: blue;
-}
+  .main-left-column {
+      display: flex;
+      flex-direction: column;
+      min-width: 18%;
+      max-width: 18%;
+      order: 0;
+      background-color: blue;
+  }
 /* This Part Places the Images and their text in the right format */
-main>aside>figure {
-    display: flex;
-    min-height: 48px;
-    min-width: 48px;
-    flex-direction: column;
-    text-align: center;
-}
+    main>aside>figure {
+        display: flex;
+        min-height: 48px;
+        min-width: 48px;
+        flex-direction: column;
+        text-align: center;
+    }
 
-.box-paragraph {
-  margin: 0;
-  margin-top: 1vh;
-}
+      .box-paragraph {
+        margin: 0;
+        margin-top: 1vh;
+      }
 
-.main-right-column {
-  display: block;
-  max-width: 100%;
-  min-width: 80%;
-  margin-left: 0%;
-  order: 1;
-  max-height: 40vh;
-  min-height: 40vh;
-  /* BACKGROUND IMAGE HERE */
-  background-image: url(../imgs/code.jpeg);
-  background-repeat: no-repeat;
-  /* this compromises aspect ratio, but makes it fill the div */
-  background-size: cover;
-  background-position: center center;
-}
-/* this CSS makes the image fit the container above */
-
-.main-right-column-image {
-  min-width: 100%;
-}
+  .main-right-column {
+    display: block;
+    max-width: 100%;
+    min-width: 80%;
+    margin-left: 0%;
+    order: 1;
+    max-height: 40vh;
+    min-height: 40vh;
+    /* BACKGROUND IMAGE HERE */
+    background-image: url(../imgs/code.jpeg);
+    background-repeat: no-repeat;
+    /* this compromises aspect ratio, but makes it fill the div */
+    background-size: cover;
+    background-position: center center;
+  }
 
 /* Ending of Main CSS */
 
@@ -127,31 +122,27 @@ main>aside>figure {
     flex-wrap: nowrap;
 }
 
-.featured-work-title {
-  font-size: 2vw;
-  margin: 0;
-  margin-bottom: 1.5vh;
-  background-color: green;
-}
+  .featured-work-title {
+    font-size: 2vw;
+    margin: 0;
+    margin-bottom: 1.5vh;
+    background-color: green;
+  }
 
-.featured-work-list {
-    display: flex;
-    margin-top: 0;
-    padding: 0;
-    list-style-type: none; /* gets rid of dots */
-    align-items: baseline;
-}
+    .featured-work-list {
+        display: flex;
+        margin-top: 0;
+        padding: 0;
+        list-style-type: none; /* gets rid of dots */
+        align-items: baseline;
+    }
 
-.featured-work-part {
-  margin-right: 1.5vw;
-  width: calc((100% - 6vw)/3);
-  text-align: center;
-}
+      .featured-work-part {
+        margin-right: 1.5vw;
+        width: calc((100% - 6vw)/3);
+        text-align: center;
+      }
 
-.featured-work-part {
-  margin-right: 0px;
-}
-
-.featured-work-img {
-  width: 100%;
-}
+        .featured-work-img {
+          width: 100%;
+        }
