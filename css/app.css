@@ -30,31 +30,31 @@ h1, h2, h3, h4, h5, h6 {
 header {
     display: flex;
     max-height: 15vh;
-    margin-top: 4em;
+    margin-top: 4vh;
     margin-left: 20%;
     margin-right: 10%;
     border-bottom-style: solid;
     border-bottom-color: grey;
 }
 
-.header-text-container {
-    margin-left: auto; /* to push header to the right */
-}
+  .header-logo {
+      width: 5vw;
+      height: 5vw;
+      margin-bottom: 5vh;
+  }
 
-.header-title {
-  font-size: 3.2vw;
-}
+  .header-text-container {
+      margin-left: auto; /* to push header to the right */
+  }
 
-.header-sub-title {
-    text-align: right;
-    font-size: 1.5vw;
-}
+    .header-title {
+      font-size: 3.2vw;
+    }
 
-.header-logo {
-    width: 5vw;
-    height: 5vw;
-    margin-bottom: 5vh;
-}
+    .header-sub-title {
+        text-align: right;
+        font-size: 1.5vw;
+    }
 
 /* Ending of Header CSS */
 
@@ -153,8 +153,5 @@ main>aside>figure {
 }
 
 .featured-work-img {
-  width: auto;
-  max-height: 15vh;
-  min-height: 15vh;
-  object-fit: fill;
+  width: 100%;
 }
