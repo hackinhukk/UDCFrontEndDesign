@@ -6,7 +6,7 @@ body, html {
 }
 
 body {
-  color: #808080;
+  font-size: 18px;
 }
 header, nav, footer, figure, div, aside {
   box-sizing: border-box;
@@ -15,6 +15,7 @@ header, nav, footer, figure, div, aside {
 * {
   box-sizing: border-box;
   font-family: courier new;
+  border: 1px solid red; /* for debugging/visualization */
 }
 
 img {
@@ -23,8 +24,12 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-size: 18px;
 }
 
+<p> {
+  font-size: 18px;
+}
 
 /* Beginning of Header CSS */
 header {
@@ -35,6 +40,7 @@ header {
     margin-right: 10vw;
     border-bottom-style: solid;
     border-bottom-color: grey;
+    color: 000;
 }
 
   .header-logo {
@@ -76,6 +82,7 @@ main {
       min-width: 15vw;
       max-width: 15vw;
       order: 0;
+      color: #808080;
   }
 /* This Part Places the Images and their text in the right format */
     main>aside>figure {
@@ -100,6 +107,7 @@ main {
     max-height: 40vh;
     min-height: 40vh;
     margin-top: 2vh;
+    margin-right: 10vw;
     /* BACKGROUND IMAGE HERE */
     background-image: url(../imgs/code.jpeg);
     background-repeat: no-repeat;
@@ -127,7 +135,6 @@ main {
     font-size: 2vw;
     margin: 0;
     margin-bottom: 1.5vh;
-    background-color: green;
   }
 
     .featured-work-list {
@@ -146,4 +153,5 @@ main {
 
         .featured-work-img {
           width: 100%;
+          max-height: 30vh;
         }
