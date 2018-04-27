@@ -1,14 +1,20 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  color: #808080;
 }
 header, nav, footer, figure, div, aside {
   box-sizing: border-box;
 }
+
 * {
   box-sizing: border-box;
+  font-family: courier new;
 }
 
 img {
@@ -24,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     display: flex;
     max-height: 15vh;
-    margin-top: 3em;
+    margin-top: 4em;
     margin-left: 20%;
     margin-right: 10%;
     border-bottom-style: solid;
@@ -47,6 +53,7 @@ header {
 .header-logo {
     width: 5vw;
     height: 5vw;
+    margin-bottom: 5vh;
 }
 
 /* Ending of Header CSS */
@@ -56,18 +63,18 @@ header {
 main {
     display: flex;
     flex-direction: row;
-    max-height: 50vh;
+    max-height: 40vh;
+    height: 40vh;
     margin-right: 10%;
     margin-left: 5%;
-    flex-wrap: nowrap;
     /* overflow makes content contained to a container */
 }
 
 .main-left-column {
     display: flex;
     flex-direction: column;
-    min-width: 20%;
-    max-width: 20%;
+    min-width: 18%;
+    max-width: 18%;
     order: 0;
     background-color: blue;
 }
@@ -80,22 +87,28 @@ main>aside>figure {
     text-align: center;
 }
 
+.box-paragraph {
+  margin: 0;
+  margin-top: 1vh;
+}
+
 .main-right-column {
   display: block;
   max-width: 100%;
   min-width: 80%;
   margin-left: 0%;
   order: 1;
-  max-height: 50vh;
-  min-height: 50vh;
+  max-height: 40vh;
+  min-height: 40vh;
   /* BACKGROUND IMAGE HERE */
-  background-image: url('https://tctechcrunch2011.files.wordpress.com/2015/04/codecode.jpg?crop');
+  background-image: url(../imgs/code.jpeg);
   background-repeat: no-repeat;
   /* this compromises aspect ratio, but makes it fill the div */
   background-size: cover;
   background-position: center center;
 }
 /* this CSS makes the image fit the container above */
+
 .main-right-column-image {
   min-width: 100%;
 }
@@ -110,7 +123,7 @@ main>aside>figure {
     max-width: 80%;
     margin-left: 20%;
     margin-right: 10%;
-    overflow: auto;
+    overflow: hidden;
     flex-wrap: nowrap;
 }
 
@@ -120,9 +133,9 @@ main>aside>figure {
   margin-bottom: 1.5vh;
   background-color: green;
 }
+
 .featured-work-list {
     display: flex;
-    flex-direction: row;
     margin-top: 0;
     padding: 0;
     list-style-type: none; /* gets rid of dots */
@@ -135,7 +148,13 @@ main>aside>figure {
   text-align: center;
 }
 
+.featured-work-part {
+  margin-right: 0px;
+}
+
 .featured-work-img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  max-height: 15vh;
+  min-height: 15vh;
+  object-fit: fill;
 }
