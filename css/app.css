@@ -16,7 +16,6 @@ header, nav, footer, figure, div, aside {
 * {
   box-sizing: border-box;
   font-family: "courier new";
-  border: 1px solid red; /* for debugging/visualization */
 }
 
 img {
