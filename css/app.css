@@ -57,7 +57,7 @@ header {
   }
 
   .header-text-container {
-      margin-left: auto; /* to push header to the right */
+      margin-left: auto;
   }
 
     .header-title {
@@ -112,7 +112,7 @@ main {
   .main-right-column {
     max-width: 70vw;
     min-width: 70vw;
-    margin-left: 0%;
+    margin-left: 0;
     order: 1;
     max-height: 40vh;
     min-height: 40vh;
@@ -152,7 +152,7 @@ main {
         display: flex;
         margin-top: 0;
         padding: 0;
-        list-style-type: none; /* gets rid of dots */
+        list-style-type: none;
         align-items: baseline;
     }
 
