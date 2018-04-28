@@ -1,8 +1,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 body {
@@ -35,6 +35,7 @@ p {
 header {
     display: flex;
     max-height: 15vh;
+    min-height: 15vh;
     margin-top: 4vh;
     margin-left: 20vw;
     margin-right: 10vw;
@@ -72,6 +73,7 @@ main {
     height: 40vh;
     padding: 0;
     margin-left: 5vw;
+    margin-right: 10vw;
     /* overflow makes content contained to a container */
 }
 
@@ -101,21 +103,20 @@ main {
       }
 
   .main-right-column {
-    display: block;
-    max-width: 69vw;
-    min-width: 69vw;
+    max-width: 70vw;
+    min-width: 70vw;
     margin-left: 0%;
     order: 1;
     max-height: 40vh;
     min-height: 40vh;
     margin-top: 2vh;
-    margin-right: 10vw;
     /* BACKGROUND IMAGE HERE */
     background-image: url(../imgs/code.jpeg);
     background-repeat: no-repeat;
     /* this compromises aspect ratio, but makes it fill the div */
     background-size: cover;
     background-position: center center;
+    overflow: auto;
   }
 
 /* Ending of Main CSS */
@@ -167,3 +168,42 @@ main {
         .featured-work-url {
           font-style: italic;
         }
+
+/* Media Query Section */
+
+@media screen and (min-width: 501px) and (max-width: 1050px)
+{
+
+header, main, nav {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+header {
+  margin-top: 2vh;
+  min-height: 13vh;
+  max-height: 13vh;
+}
+
+  .header-logo {
+    margin-bottom: 0;
+    height: 13vh;
+    width: 10vw;
+  }
+
+  .main-right-column {
+    min-width: 75vw;
+  }
+
+    main>aside>figure {
+      min-height: 10vh;
+      min-width: 10vw;
+      padding: 1vmin;
+      margin: 1vmin;
+      background-position: center center;
+    }
+
+      .box-paragraph{
+        font-size: 1.8vw;
+      }
+}
