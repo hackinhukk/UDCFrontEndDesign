@@ -6,8 +6,9 @@ body, html {
 }
 
 body {
-  font-size: 18px;
+  font-size: 1vw;
 }
+
 header, nav, footer, figure, div, aside {
   box-sizing: border-box;
 }
@@ -24,13 +25,19 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-size: 18px;
+  font-size: 1vw;
+  text-overflow: ellipsis;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1vw;
+  text-overflow: ellipsis;
 }
 
+a {
+  font-size: 1.2vw;
+  text-overflow: ellipsis;
+}
 /* Beginning of Header CSS */
 header {
     display: flex;
@@ -126,12 +133,11 @@ main {
 .featured-work {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 70vw;
     margin-left: 20vw;
     margin-right: 10vw;
     margin-top: 4vh;
     overflow: hidden;
-    flex-wrap: nowrap;
 }
 
   .featured-work-title {
@@ -164,6 +170,7 @@ main {
 
         .featured-work-text {
           font-weight: bold;
+          font-size: 1.5vw;
         }
         .featured-work-url {
           font-style: italic;
@@ -171,11 +178,11 @@ main {
 
 /* Media Query Section */
 
-@media screen and (min-width: 501px) and (max-width: 1050px)
+@media screen and (max-width: 1050px)
 {
 
 header, main, nav {
-  margin-left: 5vw;
+  margin-left: 0;
   margin-right: 5vw;
 }
 
@@ -192,7 +199,7 @@ header {
   }
 
   .main-right-column {
-    min-width: 75vw;
+    min-width: 80vw;
   }
 
     main>aside>figure {
@@ -205,5 +212,25 @@ header {
 
       .box-paragraph{
         font-size: 1.8vw;
+      }
+
+.featured-work {
+  max-width: 95vw;
+  margin-left: 0;
+  margin-right: 5vw;
+  min-height: 40vh;
+}
+
+  .featured-work-title {
+    font-size: 4vw;
+  }
+
+    .featured-work-text {
+      font-size: 3vw;
+      margin-bottom: 0.5vh;
+    }
+
+      .featured-work-url {
+        font-size: 2vw;
       }
 }
