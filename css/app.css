@@ -157,7 +157,7 @@ main {
 
       .featured-work-part {
         margin-right: 1.5vw;
-        width: calc((100% - 6vw)/3);
+        width: calc((100vw - 6vw)/3);
         text-align: center;
       }
 
